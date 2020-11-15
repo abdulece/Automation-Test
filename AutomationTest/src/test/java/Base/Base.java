@@ -22,7 +22,7 @@ public class Base {
 	
 	public static void initializeBrowser()
 	{
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\pandi\\eclipse-workspace\\AutomationTest\\src\\test\\resources\\Driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\abdul\\git\\repository\\AutomationTest\\src\\test\\resources\\Driver\\chromedriver.exe");
 		driver=new ChromeDriver();
 		test.log(Status.PASS, "Browser has been initialised");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -30,7 +30,7 @@ public class Base {
 	
 	public static String readConfig(String key) throws IOException
 	{
-		File file=new File("C:\\Users\\pandi\\eclipse-workspace\\AutomationTest\\src\\test\\resources\\config.properties");
+		File file=new File("C:\\Users\\abdul\\git\\repository\\AutomationTest\\src\\test\\resources\\config.properties");
 		FileInputStream fis=new FileInputStream(file);
 		Properties prop=new Properties();
 		prop.load(fis);

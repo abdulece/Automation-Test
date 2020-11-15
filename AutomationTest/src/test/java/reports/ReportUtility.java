@@ -13,7 +13,7 @@ public class ReportUtility extends Base {
 
 	public void initiateReport() {
 		
-		File file=new File("C:\\Users\\pandi\\eclipse-workspace\\AutomationTest\\target\\report.html");
+		File file=new File("C:\\Users\\abdul\\Desktop\\report.html");
 		
 		
 		report=new ExtentReports();ExtentHtmlReporter reporter=new ExtentHtmlReporter(file);
